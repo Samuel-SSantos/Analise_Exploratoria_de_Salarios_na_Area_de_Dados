@@ -34,28 +34,30 @@ A análise foi realizada utilizando Python e bibliotecas de ciência de dados, e
 - Jupyter Notebook
 
 📂 Estrutura do Projeto
+
 data-salary-analysis/
 │
 ├── Untitled0.ipynb
 ├── salario_profissionais_dados.csv
 └── README.md
+
 📊 Dataset
 
 O dataset utilizado contém informações sobre profissionais da área de dados, incluindo:
 
-cargo ocupado (job_title)
+- Cargo ocupado (job_title)
 
-nível de experiência (experience_level)
+- Nível de experiência (experience_level)
 
-país de residência (employee_residence)
+- País de residência (employee_residence)
 
-tamanho da empresa (company_size)
+- Tamanho da empresa (company_size)
 
-salário (salary_in_usd)
+- Salário (salary_in_usd)
 
-anos de experiência
+- Anos de experiência
 
-ano de trabalho
+- Ano de trabalho
 
 🔎 Etapas da Análise
 1️⃣ Importação das bibliotecas
