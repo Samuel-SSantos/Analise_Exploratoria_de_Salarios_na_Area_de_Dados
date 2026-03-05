@@ -17,21 +17,21 @@ O objetivo da análise é compreender como fatores como:
 
 - Tamanho da empresa
 
-influenciam os salários pagos na indústria de dados.
+Influenciam os salários pagos na indústria de dados.
 
 A análise foi realizada utilizando Python e bibliotecas de ciência de dados, explorando estatísticas descritivas, distribuições e relações entre variáveis.
 
 🧠 Tecnologias Utilizadas
 
-Python
+- Python
 
-Pandas
+- Pandas
 
-Matplotlib
+- Matplotlib
 
-Seaborn
+- Seaborn
 
-Jupyter Notebook
+- Jupyter Notebook
 
 📂 Estrutura do Projeto
 data-salary-analysis/
