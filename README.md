@@ -68,7 +68,9 @@ O dataset utilizado contém informações sobre profissionais da área de dados,
 1️⃣ Importação das bibliotecas
 
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
 
 O que acontece aqui
@@ -81,23 +83,23 @@ Biblioteca fundamental para manipulação de dados estruturados.
 
 Permite:
 
-carregar datasets
+- Carregar datasets
 
-limpar dados
+- Limpar dados
 
-transformar dados
+- Transformar dados
 
-realizar análises estatísticas
+- Realizar análises estatísticas
 
 Matplotlib
 
 Biblioteca utilizada para visualização de dados, permitindo criar gráficos como:
 
-histogramas
+- Histogramas
 
-scatterplots
+- Scatterplots
 
-boxplots
+- Boxplots
 
 Seaborn
 
