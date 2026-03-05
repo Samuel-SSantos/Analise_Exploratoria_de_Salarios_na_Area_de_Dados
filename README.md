@@ -60,10 +60,13 @@ O dataset utilizado contém informações sobre profissionais da área de dados,
 - Ano de trabalho
 
 🔎 Etapas da Análise
+
 1️⃣ Importação das bibliotecas
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 O que acontece aqui
 
 Nesta etapa são importadas as principais bibliotecas utilizadas na análise:
