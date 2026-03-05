@@ -2,19 +2,20 @@
 Este projeto realiza uma Análise Exploratória de Dados (EDA) utilizando Python para investigar padrões salariais de profissionais da área de dados.
 
 Análise Exploratória de Salários na Área de Dados
+
 📌 Sobre o Projeto
 
 Este projeto realiza uma Análise Exploratória de Dados (EDA) utilizando Python para investigar padrões salariais de profissionais da área de dados.
 
 O objetivo da análise é compreender como fatores como:
 
-nível de experiência
+- Nível de experiência
 
-país de residência
+- País de residência
 
-cargo
+- Cargo
 
-tamanho da empresa
+- Tamanho da empresa
 
 influenciam os salários pagos na indústria de dados.
 
