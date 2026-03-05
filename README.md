@@ -36,9 +36,13 @@ A análise foi realizada utilizando Python e bibliotecas de ciência de dados, e
 📂 Estrutura do Projeto
 
 data-salary-analysis/
+
 │
+
 ├── Untitled0.ipynb
+
 ├── salario_profissionais_dados.csv
+
 └── README.md
 
 📊 Dataset
