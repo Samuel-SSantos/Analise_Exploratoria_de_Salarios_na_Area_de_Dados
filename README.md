@@ -73,11 +73,11 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
-O que acontece aqui
+# O que acontece aqui
 
 Nesta etapa são importadas as principais bibliotecas utilizadas na análise:
 
-Pandas
+# Pandas
 
 Biblioteca fundamental para manipulação de dados estruturados.
 
@@ -91,7 +91,7 @@ Permite:
 
 - Realizar análises estatísticas
 
-Matplotlib
+# Matplotlib
 
 Biblioteca utilizada para visualização de dados, permitindo criar gráficos como:
 
@@ -101,7 +101,7 @@ Biblioteca utilizada para visualização de dados, permitindo criar gráficos co
 
 - Boxplots
 
-Seaborn
+# Seaborn
 
 Biblioteca construída sobre o Matplotlib que facilita a criação de visualizações estatísticas mais sofisticadas.
 
