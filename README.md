@@ -127,7 +127,7 @@ Um DataFrame funciona como uma tabela onde:
 
 df.head(5)
 
-Objetivo:
+Objetivo
 
 Visualizar as primeiras 5 linhas do dataset.
 
@@ -156,27 +156,31 @@ Isso ajuda a entender:
 - Quantas variáveis estão sendo analisadas
 
 5️⃣ Informações Gerais do Dataset
+
 df.info()
-O que essa função mostra
 
-nome das colunas
+O que essa função mostra:
 
-tipo de dados de cada coluna
+- Nome das colunas
 
-quantidade de valores não nulos
+- Tipo de dados de cada coluna
 
-uso de memória
+- Quantidade de valores não nulos
+
+- Uso de memória
 
 Isso é importante para identificar:
 
-colunas numéricas
+- Colunas numéricas
 
-colunas categóricas
+- Colunas categóricas
 
-possíveis problemas de dados faltantes
+- Possíveis problemas de dados faltantes
 
 6️⃣ Verificação de Valores Nulos
+
 df.isnull().sum()
+
 Objetivo
 
 Identificar dados ausentes no dataset.
@@ -185,21 +189,23 @@ Valores nulos podem prejudicar análises e modelos de machine learning.
 
 Essa etapa permite saber:
 
-quais colunas possuem valores faltantes
+- Quais colunas possuem valores faltantes
 
-quantos registros estão incompletos
+- Quantos registros estão incompletos
 
 7️⃣ Frequência de Combinações de Variáveis
+
 df[['job_title', 'experience_level', 'company_size']].value_counts(normalize=True).head(10)
+
 O que essa análise faz
 
 Analisa as combinações mais frequentes entre:
 
-cargo
+- Cargo
 
-nível de experiência
+- Nível de experiência
 
-tamanho da empresa
+- Tamanho da empresa
 
 O parâmetro:
 
@@ -209,45 +215,51 @@ transforma os valores em proporções (%).
 
 Isso permite entender padrões como:
 
-quais cargos aparecem mais
+- Quais cargos aparecem mais
 
-em quais empresas
+- Em quais empresas
 
-com quais níveis de experiência
+- Com quais níveis de experiência
 
 8️⃣ Estatísticas Descritivas
+
 df.describe()
+
 O que essa função mostra
 
 Estatísticas básicas das variáveis numéricas:
 
-média
+- Média
 
-desvio padrão
+- Desvio padrão
 
-valor mínimo
+- Valor mínimo
 
-quartis
+- Quartis
 
-valor máximo
+- Valor máximo
 
 Essa etapa ajuda a entender a distribuição geral dos salários e outras variáveis numéricas.
 
 9️⃣ Distribuição dos Salários
+
 sns.histplot(df['salary_in_usd'], kde=True)
+
 plt.title('Distribuição de Salários em USD')
+
 plt.show()
+
 O que esse gráfico mostra
 
 Um histograma da distribuição salarial.
 
 O histograma mostra:
 
-concentração de salários
+- Concentração de salários
 
-dispersão
+- Dispersão
 
-possíveis outliers
+- Possíveis outliers
 
 O parâmetro:
 
@@ -256,7 +268,9 @@ kde=True
 adiciona uma curva de densidade, facilitando a visualização da distribuição.
 
 🔟 Salário Médio por Nível de Experiência
+
 media_experiencia = df.groupby('experience_level')['salary_in_usd'].mean().sort_values()
+
 O que essa análise faz
 
 Agrupa os dados por nível de experiência e calcula o salário médio para cada grupo.
@@ -264,35 +278,41 @@ Agrupa os dados por nível de experiência e calcula o salário médio para cada
 Isso permite entender como a experiência impacta os salários.
 
 📦 Boxplot de Salários por Experiência
+
 sns.boxplot(x='experience_level', y='salary_in_usd', data=df)
+
 O que o boxplot mostra
 
 O boxplot apresenta:
 
-mediana salarial
+- Mediana salarial
 
-quartis
+- Quartis
 
-dispersão
+- Dispersão
 
-possíveis outliers
+- Possíveis outliers
 
 Ele permite comparar visualmente salários entre diferentes níveis de experiência.
 
 🌍 Salário Médio por País
+
 df.groupby('employee_residence')['salary_in_usd'].mean().sort_values(ascending=False)
+
 Objetivo da análise
 
 Calcular o salário médio por país de residência.
 
 Essa análise permite identificar:
 
-países com maiores salários
+- Países com maiores salários
 
-diferenças regionais na remuneração
+- Diferenças regionais na remuneração
 
 🔗 Correlação entre Variáveis Numéricas
+
 df[['salary_in_usd', 'work_year', 'years_of_experience']].corr()
+
 O que é correlação
 
 Correlação mede o grau de relação entre duas variáveis numéricas.
@@ -304,9 +324,9 @@ O valor varia entre:
 +1 → correlação positiva
 Interpretação possível
 
-anos de experiência podem estar positivamente relacionados ao salário
+- Anos de experiência podem estar positivamente relacionados ao salário
 
-ano de trabalho pode indicar evolução do mercado ao longo do tempo
+- Ano de trabalho pode indicar evolução do mercado ao longo do tempo
 
 📈 Principais Insights Possíveis
 
