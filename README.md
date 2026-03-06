@@ -106,8 +106,10 @@ Biblioteca utilizada para visualização de dados, permitindo criar gráficos co
 Biblioteca construída sobre o Matplotlib que facilita a criação de visualizações estatísticas mais sofisticadas.
 
 2️⃣ Carregamento do Dataset
+
 df = pd.read_csv("salario_profissionais_dados.csv")
-O que acontece aqui
+
+# O que acontece aqui
 
 O dataset é carregado utilizando a função:
 
@@ -117,26 +119,30 @@ Isso cria um DataFrame, que é a estrutura de dados principal do Pandas.
 
 Um DataFrame funciona como uma tabela onde:
 
-cada linha representa uma observação
+- Cada linha representa uma observação
 
-cada coluna representa uma variável
+- Cada coluna representa uma variável
 
 3️⃣ Visualização Inicial dos Dados
+
 df.head(5)
-Objetivo
+
+Objetivo:
 
 Visualizar as primeiras 5 linhas do dataset.
 
 Isso permite:
 
-verificar se o dataset foi carregado corretamente
+- Verificar se o dataset foi carregado corretamente
 
-entender a estrutura das colunas
+- Entender a estrutura das colunas
 
-identificar o tipo de informação disponível
+- Identificar o tipo de informação disponível
 
 4️⃣ Dimensão do Dataset
+
 df.shape
+
 Objetivo
 
 Retorna a dimensão do dataset:
@@ -145,9 +151,9 @@ Retorna a dimensão do dataset:
 
 Isso ajuda a entender:
 
-quantos registros existem
+- Quantos registros existem
 
-quantas variáveis estão sendo analisadas
+- Quantas variáveis estão sendo analisadas
 
 5️⃣ Informações Gerais do Dataset
 df.info()
