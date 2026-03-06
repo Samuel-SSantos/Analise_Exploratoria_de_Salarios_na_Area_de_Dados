@@ -39,7 +39,7 @@ data-salary-analysis/
 
 │
 
-├── Untitled0.ipynb
+├── analisedesalario.ipynb
 
 ├── salario_profissionais_dados.csv
 
